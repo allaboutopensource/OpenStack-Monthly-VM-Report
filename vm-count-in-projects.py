@@ -10,7 +10,7 @@ import sys
 # Initialize connection to OpenStack
 conn = openstack.connect(cloud='openstack')
 conn2 = conn.connect_as(username = os.environ.get('OS_USERNAME'), password = os.environ.get('OS_PASSWORD'))
-cloud2 = conn.connect_as_project('7b9b3c86a8ab4a6e9a1cdc8bb07ae190')
+cloud2 = conn.connect_as_project('7b9b3c86a8ab4asds3dsf34sdg4dfghcdc8bb07ae190')
 
 # Get all projects
 projects = cloud2.identity.projects()
