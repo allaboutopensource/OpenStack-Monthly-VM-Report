@@ -10,7 +10,7 @@ clouds:
   openstack:
     auth:
       auth_url: https://itvip01.ece.devops.com:5000/v3
-      username: "sunil"
+      username: "devops"
       project_id: 7b9b334dsf45fga6e9a1cdc8bb07ae190
       project_name: "OPenstack Admin"
       user_domain_name: "Corp or cloud"
