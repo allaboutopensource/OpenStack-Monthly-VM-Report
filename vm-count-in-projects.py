@@ -19,7 +19,8 @@ projects = cloud2.identity.projects()
 for project in projects:
     servers = list(cloud2.compute.servers(details=True, all_projects=True, project_id=project.id))
     instance_count = len(servers)
+    owner_name = getattr(project, 'owner_name', None) or getattr(project, 'project_owner_name', None)
+
     
     if instance_count < 5:
-        print(f"{project.name} -> Instances: {instance_count}")
-
+        print(f"Project {project.name} has {instance_count} instances. Project Owner is: {owner_name}")
